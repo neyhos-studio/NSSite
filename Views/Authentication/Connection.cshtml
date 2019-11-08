@@ -1,0 +1,26 @@
+﻿@model NSPortal.Models.Authentication.RegisterVM
+@{
+    ViewData["Title"] = "Connection";
+    Layout = "_Layout";
+}
+
+<div>
+    <span>Connexion</span>
+    <form asp-action="SendConnection" asp-controller="Authentication">
+        <div>
+            <div>
+                <span>Email</span>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+                <p id="emailError" style="display:none" class="comments">Votre email est incorrect</p>
+
+                <span>Mot de passe</span>
+                <input id="password" name="password" type="password" placeholder="Mot de passe" required>
+                <p id="passwordError" style="display : none" class="comments">Password invalid</p>
+            </div>
+            <div>
+                <input type="submit" onclick="" />
+            </div>
+        </div>
+    </form>
+</div>
+

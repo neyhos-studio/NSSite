@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - NSPortal</title>
+</head>
+<body>
+    <header>
+        <nav>
+                <div>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">NSPortal</a>
+                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span ></span>
+                    </button>
+                    <div>
+                        <ul>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Authentication" asp-action="Connection">Connexion</a>
+                            </li>
+                            <li>
+                                <a asp-area="" asp-controller="Authentication" asp-action="Register">Inscription</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    @RenderBody()
+    @*<script src="~/src/js/script.js" asp-append-version="true"></script>*@
+    @*@RenderSection("Scripts", required: false)*@
+</body>
+</html>

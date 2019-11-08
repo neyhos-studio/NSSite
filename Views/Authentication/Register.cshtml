@@ -1,0 +1,94 @@
+﻿@model NSPortal.Models.Authentication.ConnectionVM
+@{
+    ViewData["Title"] = "Inscription";
+    Layout = "_Layout";
+}
+
+
+<div id="register">
+    <span>Formulaire d'inscription</span>
+    <form asp-action="SendRegister" asp-controller="Authentication">
+<<<<<<< HEAD
+        <div>
+            <div>
+                <span>Email</span>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+                <p id="emailError" style="display:none" class="comments">Votre email est incorrect</p>
+
+                <span>Mot de passe</span>
+                <input id="password" name="password" type="password" placeholder="Mot de passe" required>
+                <p id="passwordError" style="display : none" class="comments">Password invalid</p>
+            </div>
+            <div>
+                <span>Confirmation email</span>
+                <input id="emailConfirm" name="emailConfirm" type="text" placeholder="Email" required>
+                <p id="emailConfirmError" style="display : none" class="comments">l'email et sa confirmation sont differents</p>
+
+                <span>Confirmation mot de passe</span>
+                <input id="passwordConfirm" name="passwordConfirm" type="password" placeholder="Mot de passe" required>
+=======
+        <div class="flex-row">
+            <div class="flex-col w-350">
+                <span class="mg-l-10 mg-t-5 ft-sz-16">Email</span>
+                <input class="txt-fld pd-t-15 pd-b-15 ft-sz-16" id="email" name="email" type="email" placeholder="Email" value="test@test.fr" required>
+                <p id="emailError" style="display:none" class="comments">Votre email est incorrect</p>
+
+                <span class="mg-l-10 mg-t-25 ft-sz-16">Mot de passe</span>
+                <input class="txt-fld pd-t-15 pd-b-15 ft-sz-16" id="password" name="password" type="password" placeholder="Mot de passe" value="aaaaaaaa" required>
+                <p id="passwordError" style="display : none" class="comments">Password invalid</p>
+            </div>
+            <div class="flex-col w-350">
+                <span class="mg-l-10 mg-t-5 ft-sz-16">Confirmation email</span>
+                <input class="txt-fld pd-t-15 pd-b-15 ft-sz-16" id="emailConfirm" name="emailConfirm" type="text" placeholder="Email">
+                <p id="emailConfirmError" style="display : none" class="comments">l'email et sa confirmation sont differents</p>
+
+                <span class="mg-l-10 mg-t-25 ft-sz-16">Confirmation mot de passe</span>
+                <input class="txt-fld pd-t-15 pd-b-15 ft-sz-16" id="passwordConfirm" name="passwordConfirm" type="password" placeholder="Mot de passe">
+>>>>>>> 4ad74926a96c949b0f0c325b5f22580c00a36b2e
+                <p id="passwordConfirmError" style="display : none" class="comments">le password et sa confirmation sont differents</p>
+            </div>
+            <div>
+                <span>Pseudonyme</span>
+                <input id="nickname" name="nickname" type="text" placeholder="Pseudo" required>
+                <p id="nicknameError" style="display : none" class="comments">nto je sais pas quoi mettre comme message</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <div>
+                    Acceptez les
+                    <a><b> CGU </b></a>
+                    de NEYHOS|Studio
+                </div>
+            </div>
+            <input type="submit" onclick="" />
+        </div>
+        @*<div class="form-group" id="form2" style="display : none">
+                <label for="GET-name">Nom:</label>
+                <br>
+                <input id="firstName" name="firstName" type="text" placeholder="Nom" required>
+                <p id="firstnameError" style="display : none" class="comments">nom invalide</p>
+
+                <label for="GET-prenom">Prénom:</label>
+                <br>
+                <input id="lastName" name="lastName" type="text" placeholder="Prénom" required>
+                <p id="lastnameError" style="display : none" class="comments">prenom invalide</p>
+
+                <label for="GET-datedenaissance">Date de naissance:</label>
+                <br>
+                <input id="birthday" name="birthday" type="date" required>
+                <p id="birthdayError" style="display : none" class="comments">selectionnez une date de naissance</p>
+                <input id="submit" type="submit" class="btn btn-success">
+            </div>*@
+    </form>
+    <div class="flex1 flex-col mg-t-15 mg-b-15">
+        <div class="txt-center">
+            <a class="txt-blue txt-hv ft-bold w-fit-ctn h-fit-ctn mg-t-15 txt-center mouse-hand">Connexion</a>
+        </div>
+    </div>
+</div>
+@*<script src="~/src/js/Inscription.js" type="text/javascript"></script>*@
